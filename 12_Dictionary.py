@@ -31,3 +31,18 @@ for key, value in friends.items():
 strings={"amar","tiger","monty","tony"}
 friend ={ value:len(value) for value in strings}
 print(friend)
+
+
+weekdays = {1: "Monday",2: "Tuesday",3: "Wednesday"}
+month = { 4:"January", 5:"February",6:"March"}
+friends = {"mohan":"CHina","rohan":"Japan"}
+all = {}
+all.update(weekdays)
+all.update(month)
+print(all)
+
+#Unpacking operator to merge dictionaries|
+
+allUnpacked = {}
+allUnpacked = {**weekdays, ** month, **friends}
+print(allUnpacked)
